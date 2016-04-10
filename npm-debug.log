@@ -1,0 +1,98 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/ubuntu/.nvm/versions/node/v4.4.0/bin/node',
+1 verbose cli   '/home/ubuntu/.nvm/versions/node/v4.4.0/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@3.8.6
+3 info using node@v4.4.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/home/ubuntu/workspace/npm_dev',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /home/ubuntu/.npm/@obiereynolds/npm_dev/1.0.0/package.tgz not in flight; packing
+9 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+10 info lifecycle @obiereynolds/npm_dev@1.0.0~prepublish: @obiereynolds/npm_dev@1.0.0
+11 silly lifecycle @obiereynolds/npm_dev@1.0.0~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/home/ubuntu/.npm/@obiereynolds/npm_dev/1.0.0/package.tgz',
+12 verbose tar pack   '/home/ubuntu/workspace/npm_dev' ]
+13 verbose tarball /home/ubuntu/.npm/@obiereynolds/npm_dev/1.0.0/package.tgz
+14 verbose folder /home/ubuntu/workspace/npm_dev
+15 verbose addLocalTarball adding from inside cache /home/ubuntu/.npm/@obiereynolds/npm_dev/1.0.0/package.tgz
+16 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd @obiereynolds/npm_dev@1.0.0
+18 verbose afterAdd /home/ubuntu/.npm/@obiereynolds/npm_dev/1.0.0/package/package.json not in flight; writing
+19 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /home/ubuntu/.npm/@obiereynolds/npm_dev/1.0.0/package/package.json written
+21 silly publish { name: '@obiereynolds/npm_dev',
+21 silly publish   version: '1.0.0',
+21 silly publish   description: 'got some text over here it\'s gonna tell you how to use this amazing package',
+21 silly publish   main: 'index.js',
+21 silly publish   scripts: { test: 'node test.js' },
+21 silly publish   author: '',
+21 silly publish   license: 'ISC',
+21 silly publish   dependencies: { '@linclark/pkg': '^1.0.2' },
+21 silly publish   devDependencies: {},
+21 silly publish   readme: 'got some text over here\nit\'s gonna tell you how to use this amazing package',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   _id: '@obiereynolds/npm_dev@1.0.0',
+21 silly publish   _shasum: '32b75ee8920d59db960e2eff75bd2e2ddc1923fa',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name @obiereynolds/npm_dev
+24 silly mapToRegistry scope (from package name) @obiereynolds
+25 verbose mapToRegistry no registry URL found in name for scope @obiereynolds
+26 silly mapToRegistry using default registry
+27 silly mapToRegistry registry http://localhost:15443/
+28 silly mapToRegistry data Result {
+28 silly mapToRegistry   raw: '@obiereynolds/npm_dev',
+28 silly mapToRegistry   scope: '@obiereynolds',
+28 silly mapToRegistry   name: '@obiereynolds/npm_dev',
+28 silly mapToRegistry   rawSpec: '',
+28 silly mapToRegistry   spec: 'latest',
+28 silly mapToRegistry   type: 'tag' }
+29 silly mapToRegistry uri http://localhost:15443/@obiereynolds%2fnpm_dev
+30 verbose publish registryBase http://localhost:15443/
+31 silly publish uploading /home/ubuntu/.npm/@obiereynolds/npm_dev/1.0.0/package.tgz
+32 verbose request uri http://localhost:15443/@obiereynolds%2fnpm_dev
+33 verbose request sending authorization for write operation
+34 info attempt registry request try #1 at 6:34:48 PM
+35 verbose request id 90bbd7205f12f52d
+36 http request PUT http://localhost:15443/@obiereynolds%2fnpm_dev
+37 http 404 http://localhost:15443/@obiereynolds%2fnpm_dev
+38 verbose headers { 'content-type': 'application/json',
+38 verbose headers   date: 'Sun, 10 Apr 2016 18:34:48 GMT',
+38 verbose headers   connection: 'keep-alive',
+38 verbose headers   'content-length': '19' }
+39 verbose request invalidating /home/ubuntu/.npm/localhost_15443/_40obiereynolds_252fnpm_dev on PUT
+40 error publish Failed PUT 404
+41 verbose stack Error: missing : @obiereynolds/npm_dev
+41 verbose stack     at makeError (/home/ubuntu/.nvm/versions/node/v4.4.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+41 verbose stack     at CachingRegistryClient.<anonymous> (/home/ubuntu/.nvm/versions/node/v4.4.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+41 verbose stack     at Request._callback (/home/ubuntu/.nvm/versions/node/v4.4.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+41 verbose stack     at Request.self.callback (/home/ubuntu/.nvm/versions/node/v4.4.0/lib/node_modules/npm/node_modules/request/request.js:199:22)
+41 verbose stack     at emitTwo (events.js:87:13)
+41 verbose stack     at Request.emit (events.js:172:7)
+41 verbose stack     at Request.<anonymous> (/home/ubuntu/.nvm/versions/node/v4.4.0/lib/node_modules/npm/node_modules/request/request.js:1036:10)
+41 verbose stack     at emitOne (events.js:82:20)
+41 verbose stack     at Request.emit (events.js:169:7)
+41 verbose stack     at IncomingMessage.<anonymous> (/home/ubuntu/.nvm/versions/node/v4.4.0/lib/node_modules/npm/node_modules/request/request.js:963:12)
+42 verbose statusCode 404
+43 verbose pkgid @obiereynolds/npm_dev
+44 verbose cwd /home/ubuntu/workspace/npm_dev
+45 error Linux 4.2.0-c9
+46 error argv "/home/ubuntu/.nvm/versions/node/v4.4.0/bin/node" "/home/ubuntu/.nvm/versions/node/v4.4.0/bin/npm" "publish"
+47 error node v4.4.0
+48 error npm  v3.8.6
+49 error code E404
+50 error 404 missing : @obiereynolds/npm_dev
+51 error 404
+52 error 404 '@obiereynolds/npm_dev' is not in the npm registry.
+53 error 404 You should bug the author to publish it (or use the name yourself!)
+54 error 404 Note that you can also install from a
+55 error 404 tarball, folder, http url, or git url.
+56 verbose exit [ 1, true ]
